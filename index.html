@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Major Depressive Episode Assessment</title>
+    <link rel="stylesheet" href="king.css">
+</head>
+<body>
+    <h1 id="website">WEBSITE NAME</h1>
+    <div class="sidebar">
+        <h3>Navigation</h3>
+        <ul>
+            <li><a href="#" onclick="showPopup('home.html')">HOME</a></li>
+            <li><a href="#module-c">MODULES</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1 style="color:#0039a6;">Major Depressive Episode Assessment</h1>
+
+        <!-- Start Button Section -->
+        <div id="start-box">
+            <button id="start-button" onclick="startTest()">Start Test</button>
+        </div>
+
+        <!-- Question Box -->
+        <div id="question-box" style="display: none;">
+            <h2>Question:</h2>
+            <p id="question-text"></p>
+            <div class="buttons">
+                <button onclick="handleAnswer(true)">Yes</button>
+                <button onclick="handleAnswer(false)">No</button>
+            </div>
+            <p id="timer" style="font-weight: bold; color: red;">Time Left: 15:00</p>
+        </div>
+
+        <!-- Result Box -->
+        <div id="result-box" style="display: none;">
+            <h2>Result</h2>
+            <div class="progress-ring">
+                <svg width="120" height="120">
+                    <circle class="progress-ring__circle" cx="60" cy="60" r="50" stroke-width="10" />
+                </svg>
+            </div>
+            <p id="result-text"></p>
+            <button onclick="restart()">Restart</button>
+        </div>
+    </div>
+    <script src="hehe.js"></script>
+</body>
+</html>
